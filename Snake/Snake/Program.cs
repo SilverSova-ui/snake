@@ -21,12 +21,10 @@ namespace Snake
             leftLine.Drow();
             rightLine.Drow();
 
-            Emploee e = new Emploee();
-            e.age = 42;
-            e.pay = 300000;
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
 
-            Console.WriteLine(e.age);
-            Console.WriteLine(e.pay);
             Console.ReadLine();
         }
     }
